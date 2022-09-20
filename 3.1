@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main() {
+    int a;
+    int b;
+    int c;
+    printf("input meaning of a: ");
+    scanf("%d", &a);
+    printf("input meaning of b: ");
+    scanf("%d", &b);
+    printf("input meaning of c: ");
+    scanf("%d", &c);
+     int max = a;
+    int min = a;
+    if (max < b)
+        max = b;
+    if (max < c)
+        max = c;
+    if (min > b)
+        min = b;
+    if (min > c)
+        min = c;
+    int average = (max + min)/2;
+    if(average == a || average == b || average == c){
+        if (max - average == average - min){
+        printf("An arithmetic progression can be formed from these numbers.");
+        }
+        else 
+    printf("It is impossible to make an arithmetic progression out of these numbers.");
+    }
+    else 
+    printf("It is impossible to make an arithmetic progression out of these numbers.");
+    return 0;
+}
